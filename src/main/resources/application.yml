@@ -11,8 +11,9 @@ spring:
     config:
       server:
         git:
-          uri: file:///C:/ws-intellij/SpringConfigServer
+          uri: https://github.com/jyhynn/SpringConfigServer.git
           default-label: main
           skipSslValidation: true
           timeout: 4
-
+#          native:
+#            search-locations: file://${user.home}/??-??-??-??
