@@ -1,0 +1,21 @@
+application:
+  message: "Happy Happy Happy"
+
+server:
+  port: 8888
+
+spring:
+  application:
+    name: "config-server"
+  profiles:
+    active: local
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///C:\ws-intellij\SpringConfigServer
+          default-label: main
+          skipSslValidation: true
+          timeout: 4
+
